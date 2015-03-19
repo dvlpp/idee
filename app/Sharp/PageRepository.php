@@ -53,11 +53,7 @@ class PageRepository implements SharpCmsRepository, SharpIsReorderable, SharpHas
      */
     function newInstance()
     {
-        $c = new Contenu();
-        $c->save();
-        $p = new Page();
-        $p->contenu()->associate($c);
-        return $p;
+        return new Page();
     }
 
     /**
@@ -80,7 +76,18 @@ class PageRepository implements SharpCmsRepository, SharpIsReorderable, SharpHas
      */
     function update($id, Array $data)
     {
-        $p = $id ? $this->find($id) : $this->newInstance();
+        if( ! $id)
+        {
+            $p = $this->newInstance();
+            $c = new Contenu();
+            $c->save();
+            $p->contenu()->associate($c);
+        }
+        else
+        {
+            $p = $this->find($id);
+        }
+
         return $this->updateEntity("contenu", "page", $p, $data);
     }
 
