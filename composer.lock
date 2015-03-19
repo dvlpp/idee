@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "378f43ee21d7b9d269f2af6003eacb25",
+    "hash": "5943c6e4a8bd09aa01c5621eca570edd",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -228,12 +228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dvlpp/sharp.git",
-                "reference": "14e0306e6771685cba769de2078cd7eeb5d214f6"
+                "reference": "92fa9f532ad14d5e3154d92dbcfc18068d8cdd7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dvlpp/sharp/zipball/14e0306e6771685cba769de2078cd7eeb5d214f6",
-                "reference": "14e0306e6771685cba769de2078cd7eeb5d214f6",
+                "url": "https://api.github.com/repos/dvlpp/sharp/zipball/92fa9f532ad14d5e3154d92dbcfc18068d8cdd7c",
+                "reference": "92fa9f532ad14d5e3154d92dbcfc18068d8cdd7c",
                 "shasum": ""
             },
             "require": {
@@ -266,7 +266,7 @@
                 }
             ],
             "description": "A kind of CMS for developers who hate CMS",
-            "time": "2015-02-10 10:06:28"
+            "time": "2015-03-18 15:30:26"
         },
         {
             "name": "erusev/parsedown",
