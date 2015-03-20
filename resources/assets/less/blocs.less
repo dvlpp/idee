@@ -163,7 +163,7 @@
 @media (max-width:@screen-xs-max) {
 
   .bloc.page {
-    display: none;
+//    display: none;
   }
 
   .bloc {
@@ -175,7 +175,6 @@
     border:none;
     min-height: 250px;
     cursor: default;
-    padding-top:150px;
   }
   
   .bloc .fiche {
@@ -189,8 +188,13 @@
 
   }
 
-  .bloc .cartel, .action-pli, .hint {
+  .bloc .cartel, .action-pli {
     display: none !important;
+  }
+
+  .bloc .hint {
+    display: block !important;
+    margin: @grid-gutter-width 0;
   }
 }
 

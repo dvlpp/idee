@@ -86,7 +86,13 @@ $( document ).ready(function() {
 
             $('.mur').css('width', $(window).width());
 
+            $('.mur .bloc.projet').each(function() {
+                $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
+            });
+
             swiper = new Swiper('.horizontal', {});
+
+            swiper.slideTo($(".bloc.ouvert").index());
         }
         else
         {
@@ -97,6 +103,10 @@ $( document ).ready(function() {
 
                 $('.mur').removeProp('style');
                 $('.mur .bloc').css('width', '');
+
+                $('.mur .bloc.projet').each(function() {
+                    $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
+                });
 
                 $("#swiper-css").attr("href", "/css/empty.css");
             }
