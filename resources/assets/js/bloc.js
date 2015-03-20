@@ -66,9 +66,6 @@
              */
             $(this).on("transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd", function() {
 
-                var $horizontal = $(this).parents(".horizontal");
-                $horizontal.removeClass("verouille");
-
                 if($(this).hasClass("ouverture"))
                 {
                     $(this).removeClass("ouverture");
@@ -84,6 +81,9 @@
                 }
                 else if($(this).hasClass("fermeture"))
                 {
+                    var $horizontal = $(this).parents(".horizontal");
+                    $horizontal.removeClass("verouille");
+
                     $(this).removeClass("fermeture ouvert ouverture deplie");
 
                     if($(this).hasClass("projet"))
