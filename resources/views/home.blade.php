@@ -10,6 +10,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
     <link href="{{ elixir("css/app.css") }}" rel="stylesheet">
+    <link id="swiper-css" rel="stylesheet" type="text/css" href="/css/empty.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +38,7 @@
 </header>
 
 <div class="horizontal {{$deplie?"verouille":""}}">
-    <div class="mur">
+    <div class="swiper-wrapper mur">
 
         @foreach($pages as $page)
             @include("partials/bloc-page", ["page"=>$page, "ouvert"=>$page->key==$bloc])
@@ -49,6 +50,8 @@
 
     </div>
 </div>
+
+<div id="XS" class="visible-xs"></div>
 
 @section("scripts")
     <script src="{{ url("/js/vendor.js") }}"></script>

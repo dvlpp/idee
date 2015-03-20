@@ -70,4 +70,37 @@ $( document ).ready(function() {
         }
     }
 
+    var swiper;
+
+    handleSwiper();
+
+    $(window).resize(function() {
+        handleSwiper();
+    });
+
+    function handleSwiper()
+    {
+        if(isSmartphone())
+        {
+            $("#swiper-css").attr("href", "/css/swiper.css");
+
+            $('.mur').css('width', $(window).width());
+
+            swiper = new Swiper('.horizontal', {});
+        }
+        else
+        {
+            if (swiper)
+            {
+                swiper.destroy();
+                swiper = undefined;
+
+                $('.mur').removeProp('style');
+                $('.mur .bloc').css('width', '');
+
+                $("#swiper-css").attr("href", "/css/empty.css");
+            }
+        }
+    }
+
 });

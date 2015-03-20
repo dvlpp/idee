@@ -16,15 +16,17 @@ elixir(function(mix) {
     mix.less('app.less')
 
         .scripts([
-            '../bower/jquery/dist/jquery.js',
-            'imagelightbox.js'
-            //'../assets/bower/bootstrap/dist/js/bootstrap.js'
-        ], 'public/js/vendor.js', 'resources/assets/js')
+            'bower/jquery/dist/jquery.js',
+            'bower/swiper/dist/js/swiper.jquery.js',
+            'js/imagelightbox.js'
+        ], 'public/js/vendor.js', 'resources/assets')
 
         .scripts([
             'bloc.js',
             'main.js'
         ], 'public/js/idee.js', 'resources/assets/js')
+
+        .copy('resources/assets/bower/swiper/dist/css/swiper.min.css', 'public/css/swiper.css')
 
         .version(["public/css/app.css", "public/js/idee.js"]);
 

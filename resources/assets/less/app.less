@@ -10,8 +10,8 @@
 @idee-bloc-largeur-ferme: 250px;
 @idee-bloc-largeur-ouvert: 600px;
 
-@idee-bloc-hauteur-xs: 150px;
-@idee-bloc-largeur-ouvert-xs: 300px;
+//@idee-bloc-hauteur-xs: 150px;
+//@idee-bloc-largeur-ouvert-xs: 300px;
 
 html, body {
   height:100%;
@@ -97,23 +97,6 @@ a:hover, a:active, a:focus {
   outline: 0;
 }
 
-@media (max-width:@screen-xs-max) {
-
-  header .left,
-  header .right {
-    display: none;
-  }
-
-  .mur {
-    border:none;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-}
-
 .half-gutter {
   margin-right: -@grid-gutter-width/4;
   margin-left: -@grid-gutter-width/4;
@@ -139,6 +122,32 @@ a:hover, a:active, a:focus {
   z-index: 9999;
   -ms-touch-action: none;
   touch-action: none;
-//  -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
-//  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+}
+
+
+@media (max-width:@screen-xs-max) {
+
+  header .left,
+  header .right {
+    display: none;
+  }
+
+  .mur {
+    border:none;
+    display: block;
+    table-layout: auto;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .horizontal {
+    height: auto;
+
+    &.verouille {
+      overflow-x: auto;
+    }
+  }
+
 }

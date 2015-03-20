@@ -9,6 +9,8 @@
              */
             $(this).click(function(event) {
 
+                if(isSmartphone()) return true;
+
                 if($(event.target).hasClass("imagelightbox")) return true;
 
                 if($(this).hasClass("ouvert") || $(this).hasClass("ouverture")) return false;
@@ -33,6 +35,8 @@
              * Plier / déplier un bloc
              */
             $(this).find(".action-pli").click(function(event) {
+
+                if(isSmartphone()) return false;
 
                 var $bloc = $(this).parent(".bloc");
                 var $horizontal = $bloc.parents(".horizontal");
@@ -65,6 +69,8 @@
              * Une fois ouvert ou fermé (animation terminée) :
              */
             $(this).on("transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd", function() {
+
+                if(isSmartphone()) return false;
 
                 if($(this).hasClass("ouverture"))
                 {
@@ -116,4 +122,9 @@ function scrollToBloc($bloc, animationLength, callback)
         animationLength,
         callback
     );
+}
+
+function isSmartphone()
+{
+    return $("#XS:visible").length;
 }

@@ -162,25 +162,35 @@
 
 @media (max-width:@screen-xs-max) {
 
-  .bloc .cartel {
-    padding:10px;
-
-    h1 {
-      margin:@grid-gutter-width/2 0;
-    }
+  .bloc.page {
+    display: none;
   }
 
-  .bloc.ouvert,
-  .bloc.ouverture {
-    width: @idee-bloc-largeur-ouvert-xs;
+  .bloc {
+    display: block;
+    position: relative;
+    width: auto !important;
+    height: auto !important;
+    margin:0 0 20px 0;
+    border:none;
+    min-height: 250px;
+    cursor: default;
+    padding-top:150px;
   }
-
+  
   .bloc .fiche {
-    top:150px;
-    width:100%;
+    display: block !important;
+    top:auto;
+    width:auto;
+    position: relative;
     background: #fff;
     text-align:left;
-    padding:@grid-gutter-width/2;
+    padding:@grid-gutter-width @grid-gutter-width/2;
+
+  }
+
+  .bloc .cartel, .action-pli, .hint {
+    display: none !important;
   }
 }
 

@@ -1,4 +1,4 @@
-<article class="bloc projet {{ $ouvert?"ouvert":"" }} {{$ouvert&&$deplie?"deplie":""}}"
+<article class="swiper-slide bloc projet {{ $ouvert?"ouvert":"" }} {{$ouvert&&$deplie?"deplie":""}}"
          data-visuelferme="{{ vignetteNB($projet->visuel, 600, 600) }}"
          data-visuelouvert="{{ vignette($projet->visuel, 600, 600) }}"
          style="{{ $projet->visuel ? 'background-image:url('
@@ -45,7 +45,7 @@
         @if(sizeof($projet->visuels))
             <div class="row half-half-gutter photos">
                 @foreach($projet->visuels as $k => $visuel)
-                    <div class="col-sm-6">
+                    <div class="col-xs-6">
                         <a href="{{ vignette($visuel->photo, 800, 800) }}"
                            class="imagelightbox"
                            style="background-image:url({{ vignette($visuel->photo, 400, 300) }})">
@@ -53,7 +53,7 @@
                     </div>
 
                     @if($k+1%2==0)
-                        <div class="clearfix hidden-xs"></div>
+                        <div class="clearfix"></div>
                     @endif
                 @endforeach
             </div>
