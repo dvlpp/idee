@@ -90,9 +90,13 @@ $( document ).ready(function() {
                 $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
             });
 
-            swiper = new Swiper('.horizontal', {});
-
-            swiper.slideTo($(".bloc.ouvert").index());
+            swiper = new Swiper(
+                '.horizontal', {
+                    'onInit': function(swiper) {
+                        swiper.slideTo($(".bloc.ouvert").index());
+                    }
+                }
+            );
         }
         else
         {
