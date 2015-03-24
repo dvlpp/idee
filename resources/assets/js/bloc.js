@@ -15,9 +15,13 @@
 
                 if($(this).hasClass("ouvert") || $(this).hasClass("ouverture")) return false;
 
+                $(".projet.ouvert").each(function() {
+                    $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
+                });
+
                 if($(this).hasClass("projet"))
                 {
-                    // Cas projet : gestion passage visuel en couleur
+                    // Cas projet : passage visuel ouverture en couleur
                     $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
                 }
 
@@ -28,6 +32,9 @@
 
                 // Ouverture...
                 $(this).addClass("ouverture");
+
+                // Et scroll pendant l'ouverture
+                scrollToBloc($(this), 800);
 
             });
 
@@ -83,7 +90,7 @@
                         $(this).find(".action-pli").click();
                     }
 
-                    scrollToBloc($(this), 800);
+                    //scrollToBloc($(this), 800);
                 }
                 else if($(this).hasClass("fermeture"))
                 {
@@ -91,12 +98,6 @@
                     $horizontal.removeClass("verouille");
 
                     $(this).removeClass("fermeture ouvert ouverture deplie");
-
-                    if($(this).hasClass("projet"))
-                    {
-                        // Cas projet : gestion passage visuel en NB
-                        $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
-                    }
                 }
             });
 
@@ -105,20 +106,22 @@
 
 }( jQuery ));
 
+var largeurBlocFerme = parseInt($('.bloc:not(.ouvert):not(.ouverture)').css("width"));
+var largeurBlocOuvert = parseInt($('.bloc.projet.ouvert').css("width"));
+
 function scrollToBloc($bloc, animationLength, callback)
 {
     var $horizontal = $(".horizontal");
     var bordBloc = parseInt($horizontal.find(".mur").css("border-left-width"));
 
     $bloc.prevAll(".bloc").each(function() {
-        bordBloc += $(this).outerWidth();
+        bordBloc += largeurBlocFerme;
     });
 
-    var largeurBloc = $bloc.outerWidth();
     var largeurFenetre = $(window).width();
 
     $horizontal.animate(
-        {'scrollLeft': bordBloc - ((largeurFenetre-largeurBloc)/2)},
+        {'scrollLeft': bordBloc - ((largeurFenetre-largeurBlocOuvert)/2)},
         animationLength,
         callback
     );
