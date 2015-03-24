@@ -118,3 +118,9 @@ $( document ).ready(function() {
     }
 
 });
+
+
+function isSmartphone()
+{
+    return $("#XS:visible").length;
+}

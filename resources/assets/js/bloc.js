@@ -89,9 +89,8 @@
                         // Page : pas d'état "ouvert"
                         $(this).find(".action-pli").click();
                     }
-
-                    //scrollToBloc($(this), 800);
                 }
+
                 else if($(this).hasClass("fermeture"))
                 {
                     var $horizontal = $(this).parents(".horizontal");
@@ -125,9 +124,4 @@ function scrollToBloc($bloc, animationLength, callback)
         animationLength,
         callback
     );
-}
-
-function isSmartphone()
-{
-    return $("#XS:visible").length;
 }
