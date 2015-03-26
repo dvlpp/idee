@@ -93,10 +93,14 @@ $( document ).ready(function() {
             swiper = new Swiper(
                 '.horizontal', {
                     spaceBetween: 0,
-                    initialSlide: $(".bloc.ouvert").index(),
+                    //initialSlide: $(".bloc.ouvert").index(),
                     threshold: 20
                 }
             );
+
+            setTimeout(function() {
+                swiper.slideTo($(".bloc.ouvert").index());
+            }, 100);
 
         }
         else
