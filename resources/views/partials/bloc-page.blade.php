@@ -9,13 +9,26 @@
     <div class="cartel"></div>
 
     <div class="fiche">
+
         <div class="row">
+
             <div class="col-sm-8">
                 <h1 class="hidden-xs">{{ $page->contenu->titre }}</h1>
                 <div class="lead">
                     {!! markdown($page->contenu->chapo) !!}
                 </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-8">
                 {!! markdown($page->contenu->texte) !!}
+            </div>
+
+            <div class="col-sm-4">
+                {!! markdown($page->texte2) !!}
             </div>
         </div>
     </div>

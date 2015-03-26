@@ -56,14 +56,14 @@ return [
                         "contenu~chapo" => [
                             "label" => "Chapo",
                             "type" => "markdown",
-                            "toolbar" => "UL",
+                            "toolbar" => true,
                             "height" => 180
                         ],
 
                         "contenu~texte" => [
                             "label" => "Texte de description",
                             "type" => "markdown",
-                            "toolbar" => "BI UL P F",
+                            "toolbar" => true,
                             "height" => 300
                         ],
 
@@ -201,15 +201,22 @@ return [
                         "contenu~chapo" => [
                             "label" => "Chapo",
                             "type" => "markdown",
-                            "toolbar" => "UL",
+                            "toolbar" => true,
                             "height" => 180
                         ],
 
                         "contenu~texte" => [
                             "label" => "Texte de description",
                             "type" => "markdown",
-                            "toolbar" => "BI UL P F",
+                            "toolbar" => true,
                             "height" => 300
+                        ],
+
+                        "texte2" => [
+                            "label" => "Texte secondaire",
+                            "type" => "markdown",
+                            "toolbar" => true,
+                            "height" => 200
                         ],
                     ],
 
@@ -223,6 +230,7 @@ return [
                             ],
                             "col2" => [
                                 "contenu~texte",
+                                "texte2"
                             ]
                         ],
                     ]
