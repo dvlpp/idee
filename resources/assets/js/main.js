@@ -73,10 +73,6 @@ $( document ).ready(function() {
     var swiper;
 
     handleSwiper();
-    if(isSmartphone())
-    {
-        swiper.slideTo($(".bloc.ouvert").eq());
-    };
 
     $(window).resize(function() {
         handleSwiper();
@@ -96,11 +92,14 @@ $( document ).ready(function() {
 
             swiper = new Swiper(
                 '.horizontal', {
-                    'onInit': function(swiper) {
-                        swiper.slideTo($(".bloc.ouvert").index());
-                    }
+                    spaceBetween: 30
+                    //'onInit': function(swiper) {
+                    //    swiper.slideTo($(".bloc.ouvert").index());
+                    //}
                 }
             );
+
+            swiper.slideTo($(".bloc.ouvert").eq());
         }
         else
         {
