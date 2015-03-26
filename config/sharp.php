@@ -190,7 +190,7 @@ return [
                         "key" => [
                             "label" => "Adresse",
                             "type" => "text",
-                            "help" => "Mot unique servant à l'URL de la page. Pas d'accent, d'espace ou de caractères spéciaux."
+                            "help" => "Mot unique servant à l'URL de la page. Pas d'accent, d'espace ou de caractère spécial."
                         ],
 
                         "contenu~titre" => [
