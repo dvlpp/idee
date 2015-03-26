@@ -73,6 +73,10 @@ $( document ).ready(function() {
     var swiper;
 
     handleSwiper();
+    if(isSmartphone())
+    {
+        swiper.slideTo($(".bloc.ouvert").eq());
+    };
 
     $(window).resize(function() {
         handleSwiper();
