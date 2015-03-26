@@ -92,14 +92,12 @@ $( document ).ready(function() {
 
             swiper = new Swiper(
                 '.horizontal', {
-                    spaceBetween: 30
-                    //'onInit': function(swiper) {
-                    //    swiper.slideTo($(".bloc.ouvert").index());
-                    //}
+                    spaceBetween: 30,
+                    initialSlide: $(".bloc.ouvert").index(),
+                    threshold: 20
                 }
             );
 
-            swiper.slideTo($(".bloc.ouvert").eq());
         }
         else
         {
