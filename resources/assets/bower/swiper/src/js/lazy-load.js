@@ -22,13 +22,11 @@ s.lazy = {
                 _img.removeAttr('data-src');
                 _img.addClass('swiper-lazy-loaded').removeClass('swiper-lazy-loading');
                 slide.find('.swiper-lazy-preloader, .preloader').remove();
-                if (s.params.onLazyImageLoaded) {
-                    s.params.onLazyImageLoaded(s, slide[0], _img[0]);
-                }
+
+                s.emit('onLazyImageReady', s, slide[0], _img[0]);
             });
-            if (s.params.onLazyImageLoad) {
-                s.params.onLazyImageLoad(s, slide[0], _img[0]);
-            }
+            
+            s.emit('onLazyImageLoad', s, slide[0], _img[0]);
         });
             
     },
@@ -53,7 +51,7 @@ s.lazy = {
             if (nextSlide.length > 0) s.lazy.loadImageInSlide(nextSlide.index());
 
             var prevSlide = s.wrapper.children('.' + s.params.slidePrevClass);
-            if (prevSlide.length > 0) s.loadImageInSlide(prevSlide.index());
+            if (prevSlide.length > 0) s.lazy.loadImageInSlide(prevSlide.index());
         }
     },
     onTransitionStart: function () {

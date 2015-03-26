@@ -42,7 +42,8 @@ s.init = function () {
     if (s.params.hashnav) {
         if (s.hashnav) s.hashnav.init();
     }
-    if (s.params.onInit) s.params.onInit(s);
+    if (s.params.a11y && s.a11y) s.a11y.init();
+    s.emit('onInit', s);
 };
 
 // Destroy
@@ -55,7 +56,8 @@ s.destroy = function (deleteInstance) {
     if (s.params.mousewheelControl) {
         if (s.disableMousewheelControl) s.disableMousewheelControl();
     }
-    if (s.params.onDestroy) s.params.onDestroy();
+    if (s.params.a11y && s.a11y) s.a11y.destroy();
+    s.emit('onDestroy');
     if (deleteInstance !== false) s = null;
 };
 
