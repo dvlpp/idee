@@ -19,25 +19,32 @@
 
     <div class="fiche">
 
-        <h1>{{ $projet->contenu->titre }}</h1>
-
         <div class="row">
             <div class="col-sm-8">
+                <h1>{{ $projet->contenu->titre }}</h1>
+
                 <div class="lead">
                     {!! markdown($projet->contenu->chapo) !!}
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
                 {!! markdown($projet->contenu->texte) !!}
             </div>
             <div class="col-sm-4">
                 @if(sizeof($projet->partenaires))
-                    <p><strong>Partenaires</strong></p>
-                    <ul class="list-unstyled">
-                        @foreach($projet->partenaires as $partenaire)
-                            <li>
-                                {!! $partenaire->url ? link_to($partenaire->url, $partenaire->nom) : $partenaire->nom !!}
-                            </li>
-                        @endforeach
-                    </ul>
+                    <div class="partenaires">
+                        <p class="titre">Partenaires</p>
+                        <ul class="list-unstyled">
+                            @foreach($projet->partenaires as $partenaire)
+                                <li>
+                                    {!! $partenaire->url ? link_to($partenaire->url, $partenaire->nom) : $partenaire->nom !!}
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 @endif
             </div>
         </div>
