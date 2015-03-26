@@ -84,7 +84,7 @@ $( document ).ready(function() {
         {
             $("#swiper-css").attr("href", "/css/swiper.css");
 
-            $('.mur').css('width', $(window).width());
+            //$('.mur').css('width', $(window).width());
 
             $('.mur .bloc.projet').each(function() {
                 $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
@@ -104,8 +104,7 @@ $( document ).ready(function() {
             {
                 swiper.destroy();
                 swiper = undefined;
-
-                $('.mur').removeProp('style');
+                //$('.mur').removeProp('style');
                 $('.mur .bloc').css('width', '');
 
                 $('.mur .bloc.projet').each(function() {

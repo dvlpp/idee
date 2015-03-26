@@ -31,7 +31,7 @@
     </a>
 
     <div class="logo">
-        <span class="baseline">Innovation Design et Expérience</span>
+        <span class="baseline">Innovation Design et Expériences</span>
         <div><img src="/css/img/logo.png" width="78"></div>
     </div>
 
