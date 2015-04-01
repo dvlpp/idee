@@ -1,3 +1,7 @@
+var largeurBlocFerme = parseInt($('.bloc:not(.ouvert):not(.ouverture)').css("width"));
+var largeurBlocOuvert = parseInt($('.bloc.ouvert').css("width"));
+var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-color");
+
 (function ( $ ) {
 
     $.fn.bloc = function() {
@@ -11,18 +15,26 @@
 
                 if(isSmartphone()) return true;
 
-                if($(event.target).hasClass("imagelightbox")) return true;
+                if($(event.target).parents(".fiche").length) return true;
 
                 if($(this).hasClass("ouvert") || $(this).hasClass("ouverture")) return false;
 
                 $(".projet.ouvert").each(function() {
-                    $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
+                    if($(this).data("visuelferme"))
+                    {
+                        $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
+                    }
+                    $(this).css("background-color", couleurBlocFerme);
                 });
 
                 if($(this).hasClass("projet"))
                 {
                     // Cas projet : passage visuel ouverture en couleur
-                    $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
+                    if($(this).data("visuelouvert"))
+                    {
+                        $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
+                    }
+                    $(this).css("background-color", $(this).data("couleur"));
                 }
 
                 // Fermeture du bloc ouvert
@@ -48,8 +60,11 @@
                 var $bloc = $(this).parent(".bloc");
                 var $horizontal = $bloc.parents(".horizontal");
 
+                $(this).addClass("hidden");
+
                 if($bloc.hasClass("deplie"))
                 {
+                    // On replie
                     $bloc.removeClass("deplie");
                     $horizontal.removeClass("verouille");
 
@@ -61,6 +76,7 @@
                 }
                 else
                 {
+                    // On déplie
                     $bloc.find(".fiche").hide();
                     $bloc.addClass("deplie");
                     $bloc.find(".fiche").fadeIn();
@@ -70,6 +86,8 @@
                     // Gestion history
                     window.history.pushState({foo:"bar"}, $(event.currentTarget).data("titre"), $(event.currentTarget).prop("href"));
                 }
+
+                $(this).removeClass("hidden");
             });
 
             /**
@@ -105,8 +123,7 @@
 
 }( jQuery ));
 
-var largeurBlocFerme = parseInt($('.bloc:not(.ouvert):not(.ouverture)').css("width"));
-var largeurBlocOuvert = parseInt($('.bloc.projet.ouvert').css("width"));
+
 
 function scrollToBloc($bloc, animationLength, callback)
 {

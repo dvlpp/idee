@@ -2,6 +2,8 @@
 
 use Idee\Core\Repositories\PageRepo;
 use Idee\Core\Repositories\ProjetRepo;
+use Illuminate\Contracts\Filesystem\Filesystem;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class HomeController extends Controller {
     /**
@@ -51,6 +53,18 @@ class HomeController extends Controller {
         if( ! $page) return redirect()->to("/");
 
         return view('home', ["bloc"=>$key, "deplie"=>true, "projets" => $projets, "pages"=>$pages]);
+    }
+
+    public function pdf($projetId, $projetNom, $fichier, Filesystem $filesystem)
+    {
+        $path = "/data/Projet/$projetId/$fichier";
+
+        if($filesystem->exists($path))
+        {
+            return response()->download(storage_path("app/$path"), "$projetNom.pdf");
+        }
+
+        throw new NotFoundHttpException;
     }
 
 }

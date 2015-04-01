@@ -36,7 +36,14 @@ function vignetteNB($upload, $largeur, $hauteur, $options=[])
     return "";
 }
 
-function markdown($text)
+function markdown($text, $couleurLiens=null)
 {
-    return sharp_markdown($text);
+    $html = sharp_markdown($text);
+
+    if($couleurLiens)
+    {
+        $html = preg_replace('#<(a\s[^>]*)>#', '<$1 style="color:#'.$couleurLiens.'">', $html);
+    }
+
+    return $html;
 }

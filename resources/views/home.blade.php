@@ -32,7 +32,9 @@
 
     <div class="logo">
         <span class="baseline">Innovation Design et Expériences</span>
-        <div><img src="/css/img/logo.png" width="78"></div>
+        <div class="marque">
+            <img src="/css/img/logo.png" class="img-responsive" />
+        </div>
     </div>
 
 </header>

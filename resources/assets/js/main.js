@@ -70,6 +70,24 @@ $( document ).ready(function() {
         }
     }
 
+    var $logo = $("header .logo .marque");
+    window.setTimeout(function() {
+        randomizeLogo(0);
+    }, 3000);
+
+    function randomizeLogo(posPrec)
+    {
+        var pos = posPrec;
+        while(pos == posPrec) pos = Math.floor((Math.random() * 6)) * 25;
+
+        var posPX = "-" + pos + "px";
+        $logo.css("background-position", "center " + posPX);
+
+        window.setTimeout(function() {
+            randomizeLogo(pos);
+        }, 3000);
+    }
+
     var swiper;
 
     handleSwiper();
@@ -103,21 +121,19 @@ $( document ).ready(function() {
             );
 
         }
-        else
+        else if (swiper)
         {
-            if (swiper)
-            {
-                swiper.destroy();
-                swiper = undefined;
-                //$('.mur').removeProp('style');
-                $('.mur .bloc').css('width', '');
+            swiper.destroy();
+            swiper = undefined;
 
-                $('.mur .bloc.projet').each(function() {
-                    $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
-                });
+            $('.mur').removeProp('style');
+            $('.mur .bloc').css('width', '');
 
-                $("#swiper-css").attr("href", "/css/empty.css");
-            }
+            $('.mur .bloc.projet').each(function() {
+                $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
+            });
+
+            $("#swiper-css").attr("href", "/css/empty.css");
         }
     }
 

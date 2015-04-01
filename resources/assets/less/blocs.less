@@ -32,6 +32,15 @@
   letter-spacing: 1px;
 }
 
+.bloc .actu {
+  margin:0 25px;
+  font-size: 28px;
+  width: 550px;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 600;
+}
+
 .bloc.projet .hint {
   font-size:130px;
   font-weight: 100;
@@ -77,10 +86,10 @@
     padding:15px;
     margin-left:-36px;
     bottom: 15px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
+    transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
   }
 }
 
@@ -130,7 +139,14 @@
   }
 
   .partenaires {
-    padding-left:@grid-gutter-width*1.3;
+    padding-left:38px;
+  }
+
+  .pdf {
+    margin:20px 0 0 30px;
+    padding:8px 8px 20px 8px;
+    border:2px solid #000;
+    display: block;
   }
 
   .partenaires .titre {
@@ -165,6 +181,10 @@
     &:hover {
       top:105px;
       right:15px;
+      -webkit-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
+      -moz-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
+      -o-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
+      transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
     }
 
   }
@@ -216,6 +236,10 @@
     padding:0;
   }
 
+  .bloc .fiche .pdf {
+    margin-left:0;
+  }
+
   .bloc .cartel, .action-pli {
     display: none !important;
   }
@@ -223,6 +247,12 @@
   .bloc .hint {
     display: block !important;
     margin: @grid-gutter-width 0;
+  }
+
+  .bloc .actu {
+    width: auto;
+    overflow: visible;
+    padding:25px 0;
   }
 }
 

@@ -67,12 +67,33 @@ return [
                             "height" => 300
                         ],
 
+                        "is_mode_actu" => [
+                            "type" => "check",
+                            "text" => "Mode actualité"
+                        ],
+
+                        "texte_actu" => [
+                            "label" => "Texte de l'actualité",
+                            "type" => "textarea",
+                            "height" => 200,
+                            "conditional_display" => "is_mode_actu"
+                        ],
+
+                        "couleur" => [
+                            "label" => "Couleur principale (fond, liens)",
+                            "type" => "text",
+                            "attributes" => [
+                                "placeholder" => "ff0000"
+                            ]
+                        ],
+
                         "visuel" => [
                             "label" => "Photo principale",
                             "type" => "file",
                             "file_filter" => "jpg,jpeg",
                             "file_filter_alert" => "Image au format JPG seulement",
-                            "thumbnail" => "0x100"
+                            "thumbnail" => "0x100",
+                            "conditional_display" => "!is_mode_actu"
                         ],
 
                         "visuels" => [
@@ -137,6 +158,9 @@ return [
                             "tab" => "Projet",
                             "col1" => [
                                 "contenu~titre",
+                                "couleur",
+                                "is_mode_actu",
+                                "texte_actu",
                                 "visuel",
                                 "contenu~chapo",
                                 "contenu~texte",
