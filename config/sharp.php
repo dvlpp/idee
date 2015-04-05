@@ -2,7 +2,7 @@
 
 return [
     "name" => "IDeE",
-    "auth_service" => false,
+    "auth_service" => '\Idee\Sharp\Auth',
 
     "cms" => [
         "contenu" => [
