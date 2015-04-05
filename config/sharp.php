@@ -158,11 +158,11 @@ return [
                             "tab" => "Projet",
                             "col1" => [
                                 "contenu~titre",
+                                "contenu~chapo",
                                 "couleur",
                                 "is_mode_actu",
                                 "texte_actu",
                                 "visuel",
-                                "contenu~chapo",
                                 "contenu~texte",
                             ],
                             "col2" => [
