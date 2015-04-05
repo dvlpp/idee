@@ -14,7 +14,7 @@
     @if($projet->is_mode_actu)
         <h2 class="actu">{{ $projet->texte_actu }}</h2>
     @else
-        <h1 class="hint">{{ $no }}</h1>
+        <h1 class="hint">{{ $projet->numero }}</h1>
     @endif
 
     <div class="cartel">

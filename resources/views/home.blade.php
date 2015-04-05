@@ -46,8 +46,8 @@
             @include("partials/bloc-page", ["page"=>$page, "ouvert"=>$page->key==$bloc])
         @endforeach
 
-        @foreach($projets as $i => $projet)
-            @include("partials/bloc-projet", ["no"=>$i+1, "projet" => $projet, "ouvert"=>$projet->id==$bloc, "deplie"=>$deplie])
+        @foreach($projets as $projet)
+            @include("partials/bloc-projet", ["projet" => $projet, "ouvert"=>$projet->id==$bloc, "deplie"=>$deplie])
         @endforeach
 
     </div>
