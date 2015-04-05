@@ -55,16 +55,23 @@ class HomeController extends Controller {
         return view('home', ["bloc"=>$key, "deplie"=>true, "projets" => $projets, "pages"=>$pages]);
     }
 
-    public function pdf($projetId, $projetNom, $fichier, Filesystem $filesystem)
+    public function dl($projetFichierId, $nom, $fichier, Filesystem $filesystem)
     {
-        $path = "/data/Projet/$projetId/$fichier";
+        $path = "/data/ProjetFichier/$projetFichierId/$fichier";
 
         if($filesystem->exists($path))
         {
-            return response()->download(storage_path("app/$path"), "$projetNom.pdf");
+            return response()->download(storage_path("app/$path"), "$nom." . $this->extension($fichier));
         }
 
         throw new NotFoundHttpException;
+    }
+
+    private function extension($fichier)
+    {
+        $tab = explode(".", $fichier);
+
+        return sizeof($tab) ? $tab[sizeof($tab)-1] : null;
     }
 
 }

@@ -40,7 +40,7 @@
             </div>
             <div class="col-sm-4">
                 @if(sizeof($projet->partenaires))
-                    <div class="partenaires">
+                    <div class="liste">
                         <p class="titre">Partenaires</p>
                         <ul class="list-unstyled">
                             @foreach($projet->partenaires as $partenaire)
@@ -52,10 +52,19 @@
                     </div>
                 @endif
 
-                @if($projet->dossier)
-                    <a class="pdf" href="{{ route('pdf', [$projet->id, str_slug($projet->contenu->titre, '_'), $projet->dossier->fichier]) }}" style="color:#{{ $projet->couleur }}">
-                        Télécharger le&nbsp;dossier
-                    </a>
+                @if(sizeof($projet->fichiers))
+                    <div class="liste fichiers">
+                        <p class="titre">Documents<br/>à télécharger</p>
+                        <ul class="list-unstyled">
+                            @foreach($projet->fichiers as $fichier)
+                                <li>
+                                    <a class="pdf" href="{{ route('dl', [$fichier->id, str_slug($fichier->titre, '_'), $fichier->fichier->fichier]) }}" style="color:#{{ $projet->couleur }}">
+                                        {{ $fichier->titre }} ({{ $fichier->extension }})
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 @endif
             </div>
         </div>

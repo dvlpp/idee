@@ -6,7 +6,7 @@ Route::get('/projet/{id}/{slug?}', 'HomeController@projet');
 
 Route::get('/page/{id}', 'HomeController@page');
 
-Route::get('/pdf/{idprojet}/{nom}/{fichier}', [
-    'as' => 'pdf',
-    'uses' => 'HomeController@pdf'
+Route::get('/dl/{projetFichierId}/{nom}/{fichier}', [
+    'as' => 'dl',
+    'uses' => 'HomeController@dl'
 ]);

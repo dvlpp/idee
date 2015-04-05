@@ -19,10 +19,10 @@ class Projet extends Model {
             ->where('owner_key', 'visuel');
     }
 
-    public function dossier()
+    public function fichiers()
     {
-        return $this->morphOne('\Idee\Core\Upload', 'owner')
-            ->where('owner_key', 'dossier');
+        return $this->hasMany('\Idee\Core\ProjetFichier')
+            ->orderBy("ordre", "asc");
     }
 
     public function partenaires()

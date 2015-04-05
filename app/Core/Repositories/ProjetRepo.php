@@ -8,7 +8,7 @@ class ProjetRepo {
     {
         $projets = Projet::select("projets.*")
             ->where("en_ligne", true)
-            ->with(["contenu", "visuels", "visuels.photo", "visuel", "partenaires"])
+            ->with(["contenu", "visuels", "visuels.photo", "visuel", "fichiers", "fichiers.fichier", "partenaires"])
             ->join("contenus", "projets.contenu_id", "=", "contenus.id")
             ->orderBy("contenus.ordre")
             ->get();

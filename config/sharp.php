@@ -120,11 +120,35 @@ return [
                                 ],
                             ]
                         ],
-                        "dossier" => [
-                            "label" => "Dossier",
-                            "type" => "file",
-                            "file_filter" => "pdf,zip",
-                            "file_filter_alert" => "PDF ou ZIP"
+//                        "dossier" => [
+//                            "label" => "Dossier",
+//                            "type" => "file",
+//                            "file_filter" => "pdf,zip",
+//                            "file_filter_alert" => "PDF ou ZIP"
+//                        ],
+
+                        "fichiers" => [
+                            "label" => "Fichiers à télécharger",
+                            "type" => "list",
+                            "sortable" => true,
+                            "addable" => true,
+                            "removable" => true,
+                            "order_attribute" => "ordre",
+                            "add_button_text" => "Ajouter un fichier",
+                            "remove_btn_text" => "Supprimer",
+                            "item" => [
+                                "fichier" => [
+                                    "type" => "file",
+                                    "file_filter" => "pdf,zip",
+                                    "file_filter_alert" => "PDF et ZIP seulement"
+                                ],
+                                "titre" => [
+                                    "type" => "text",
+                                    "attributes" => [
+                                        "placeholder" => "Titre du fichier"
+                                    ]
+                                ],
+                            ]
                         ],
 
                         "partenaires" => [
@@ -167,7 +191,7 @@ return [
                             ],
                             "col2" => [
                                 "visuels",
-                                "dossier",
+                                "fichiers",
                                 "partenaires"
                             ]
                         ],
