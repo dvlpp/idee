@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127b4c75-65e2-4b4d-a29d-869165faf58d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php" afterPath="$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="idee.iws" />
@@ -31,18 +31,8 @@
       <file leaf-file-name="Projet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Core/Projet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1025">
+            <state vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1025">
               <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IllustrableVisuel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Core/IllustrableVisuel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="625">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -51,7 +41,7 @@
       <file leaf-file-name="idee_helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/idee_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1375">
+            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1375">
               <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding />
             </state>
@@ -61,11 +51,9 @@
       <file leaf-file-name="bloc-projet.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
+            <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="2325">
               <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#1;n#article#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,11 +68,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjetRepo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjetRepo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4691165" vertical-offset="0" max-vertical-offset="1279">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075">
+              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33229086" vertical-offset="0" max-vertical-offset="1279">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1434121662000" expanded="true" signature="564:588" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -93,18 +103,8 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1775">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1350">
-              <caret line="20" column="10" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1775">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -180,7 +180,6 @@
         <option value="$PROJECT_DIR$/app/Core/Projet.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_04_05_135032_create_projet_fichiers_table.php" />
         <option value="$PROJECT_DIR$/app/Core/ProjetFichier.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/less/blocs.less" />
@@ -189,6 +188,7 @@
         <option value="$PROJECT_DIR$/config/idee.php" />
         <option value="$PROJECT_DIR$/app/idee_helper.php" />
         <option value="$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -230,6 +230,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -682,6 +683,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -728,7 +751,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -736,7 +758,7 @@
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;compos&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;projet&#9;null&#9;null&#10;sharp.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;app.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;composer.json&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Session&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php&#10;less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;bloc&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;projetfich&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/ProjetFichier.php&#10;routes&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/routes.php&#10;Projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;homecon&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;bloc-projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;home&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;app.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;bloc.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/bloc.js&#10;main.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;filesyst&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/filesystems.php&#10;File&#9;null&#9;null&#10;homecontroller&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;link_to&#9;null&#9;null&#10;PRojetvisuel&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/ColumnsRenderers/ProjetVisuel.php&#10;bloc-page&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc-pro&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;swiper.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/swiper/dist/js/swiper.js&#10;bloc-pa&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;gulp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/gulpfile.js&#10;list&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;internal&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;bloc-&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;main&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;app&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;vignette&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;helper&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/idee_helper.php&#10;home.blade&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;Projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sharpinter&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;entityli&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;compo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Uplo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;Projet.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sha&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;sharp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;variables&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/bootstrap/less/variables.less&#10;autoload.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/bootstrap/autoload.php&#10;welcomec&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/WelcomeController.php" />
+    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/routes.php&#10;projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;compos&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;projet&#9;null&#9;null&#10;sharp.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;app.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;composer.json&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Session&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php&#10;less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;bloc&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;projetfich&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/ProjetFichier.php&#10;Projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;homecon&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;bloc-projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;home&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;app.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;bloc.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/bloc.js&#10;main.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;filesyst&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/filesystems.php&#10;File&#9;null&#9;null&#10;homecontroller&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;link_to&#9;null&#9;null&#10;PRojetvisuel&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/ColumnsRenderers/ProjetVisuel.php&#10;bloc-page&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc-pro&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;swiper.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/swiper/dist/js/swiper.js&#10;bloc-pa&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;gulp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/gulpfile.js&#10;list&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;internal&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;bloc-&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;main&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;app&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;vignette&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;helper&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/idee_helper.php&#10;home.blade&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;Projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sharpinter&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;entityli&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;compo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Uplo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;Projet.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sha&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;sharp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;variables&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/bootstrap/less/variables.less&#10;autoload.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/bootstrap/autoload.php&#10;welcomec&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/WelcomeController.php" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -766,6 +788,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -773,9 +798,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -977,7 +999,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428243860934</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Fix ordre numéros projets">
+      <created>1434120844876</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1434120844876</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1042,20 +1070,14 @@
     <MESSAGE value="Fix affichage numéro projet" />
     <MESSAGE value="Gestion liste fichier à télécharger" />
     <MESSAGE value="Ajout login Sharp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout login Sharp" />
+    <MESSAGE value="Fix ordre numéros projets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix ordre numéros projets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/bower/swiper/dist/js/swiper.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036549706" vertical-offset="0" max-vertical-offset="67400">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/swiper.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
@@ -1196,13 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30193236" vertical-offset="0" max-vertical-offset="828">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18115942" vertical-offset="0" max-vertical-offset="828">
@@ -1306,7 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="875">
           <caret line="27" column="5" selection-start-line="6" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,14 +1395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1775">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/Projet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1025">
@@ -1401,9 +1407,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#1;n#article#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1417,9 +1421,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4691165" vertical-offset="0" max-vertical-offset="1279">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1775">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33229086" vertical-offset="0" max-vertical-offset="1279">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1434121662000" expanded="true" signature="564:588" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
