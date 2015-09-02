@@ -1,5 +1,0 @@
-suites:
-    main:
-        namespace: Idee
-        psr4_prefix: Idee
-        src_path: app

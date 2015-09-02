@@ -1,9 +1,0 @@
-{
-  "name": "idee",
-
-  "dependencies": {
-    "jquery": "~1.11.0",
-    "bootstrap": "~3.3.0",
-    "swiper": "~3.0.4"
-  }
-}
