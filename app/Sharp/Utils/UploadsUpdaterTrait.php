@@ -52,7 +52,7 @@ trait UploadsUpdaterTrait {
         }
         else
         {
-            $file = public_path("tmp/$file");
+            $file = storage_path("app/tmp/$file");
             $fileName = $this->moveFile($file, $destPath);
         }
 

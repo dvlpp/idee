@@ -4,6 +4,10 @@ return [
     "name" => "IDeE",
     "auth_service" => '\Idee\Sharp\Auth',
 
+    "upload_storage_base_path" => storage_path("app/data"),
+    "thumbnail_relative_path" => "thumbnails",
+    "upload_tmp_base_path" => storage_path("app/tmp"),
+
     "cms" => [
         "contenu" => [
             "label" => "Contenu",
