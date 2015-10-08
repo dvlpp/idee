@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://designers.alsace/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/page/membres</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/page/apropos</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/projet/4/workshop-en-cours</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/projet/6/une-bonne-biere-un-bon-decapsuleur</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/projet/1/handmadehightech</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/projet/2/ceramiques-au-present</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://designers.alsace/projet/3/koug</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
