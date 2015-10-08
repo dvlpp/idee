@@ -15,7 +15,7 @@ function vignetteNB($upload, $largeur, $hauteur, $options=[])
 
     if($vignette)
     {
-        $file = public_path(substr($vignette, strlen(Config::get("app.url"))));
+        $file = public_path(substr($vignette, strlen(config("app.url"))));
 
         $fileName = $file . "_NB.jpg";
 
