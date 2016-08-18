@@ -75,7 +75,8 @@
                     <div class="col-xs-6">
                         <a href="{{ vignette($visuel->photo, 800, 800) }}"
                            class="imagelightbox"
-                           style="background-image:url({{ vignette($visuel->photo, 400, 300) }})">
+                           style="background-image:url({{ vignette($visuel->photo, 400, 300) }})"
+                           alt="{{ $visuel->legende }}">
                         </a>
                     </div>
 
