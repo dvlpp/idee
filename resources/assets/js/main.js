@@ -39,13 +39,25 @@ $( document ).ready(function() {
 
     var $instance = $('.imagelightbox').imageLightbox({
         allowedTypes: '',
+        onLoadStart: function() { captionOff(); },
+        onLoadEnd:	 function() { captionOn(); },
         onStart: function() { MODE_LIGHTBOX=true; },
-        onEnd: function() { MODE_LIGHTBOX=false; }
+        onEnd: function() { captionOff(); MODE_LIGHTBOX=false; }
     });
 
     $('.horizontal').click(function() {
         if(MODE_LIGHTBOX) $instance.quitImageLightbox();
     });
+
+    function captionOn() {
+        var description = $('a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]').attr('title');
+        if(description.length > 0) {
+            $('<div id="imagelightbox-caption">' + description + '</div>').appendTo('body');
+        }
+    }
+    function captionOff() {
+        $('#imagelightbox-caption').remove();
+    }
 
     function openPrev()
     {
