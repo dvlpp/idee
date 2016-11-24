@@ -3,12 +3,7 @@
 @import "blocs";
 
 @body-bg: #f8f2e9;
-//@screen-sm: 620px;
 @font-family-sans-serif:  Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-@idee-bloc-hauteur: 400px;
-@idee-bloc-largeur-ferme: 250px;
-@idee-bloc-largeur-ouvert: 600px;
 
 html, body {
   height:100%;
@@ -21,25 +16,6 @@ html, body {
 
 h1, .lead, strong {
   font-weight: 600;
-}
-
-.horizontal {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-
-  &.verouille {
-    overflow-x: hidden;
-  }
-}
-
-.mur {
-  margin-top:90px;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-left:200px solid transparent;
-  border-right:200px solid transparent;
 }
 
 .icon-circle {
@@ -59,10 +35,13 @@ header {
   background: @body-bg;
   height:90px;
   z-index: 1000;
-  position:fixed;
   text-align: center;
   width: 100%;
   padding:15px 0;
+}
+
+footer {
+  height: 45px;
 }
 
 .logo .baseline {
@@ -132,30 +111,45 @@ a:hover, a:active, a:focus {
   touch-action: none;
 }
 
+#imagelightbox-overlay {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  -webkit-animation: fade-in .25s linear;
+  animation: fade-in .25s linear;
+}
+
+#imagelightbox-caption {
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.625em;
+}
+
+@-webkit-keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 @media (max-width:@screen-xs-max) {
 
-  header .left,
-  header .right {
-    display: none;
-  }
-
-  .mur {
-    border:none;
-    display: block;
-    table-layout: auto;
-  }
-
   h1 {
     font-size: 26px;
-  }
-
-  .horizontal {
-    height: auto;
-
-    &.verouille {
-      overflow-x: auto;
-    }
   }
 
 }

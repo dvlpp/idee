@@ -14,7 +14,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
     <link href="{{ elixir("css/app.css") }}" rel="stylesheet">
-    <link id="swiper-css" rel="stylesheet" type="text/css" href="/css/empty.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,14 +25,6 @@
 <body>
 
 <header>
-    <a class="icon-circle left">
-        <span class="icon-keyboard-arrow-left"></span>
-    </a>
-
-    <a class="icon-circle right">
-        <span class="icon-keyboard-arrow-right"></span>
-    </a>
-
     <div class="logo">
         <span class="baseline">Innovation Design et Expériences</span>
         <div class="marque">
@@ -43,19 +34,25 @@
 
 </header>
 
-<div class="horizontal {{$deplie?"verouille":""}}">
-    <div class="swiper-wrapper mur">
+<div class="container">
+
+    @foreach($projets as $projet)
+        @include("partials/bloc-projet", ["projet" => $projet, "ouvert"=>$projet->id==$bloc, "deplie"=>$deplie])
+    @endforeach
+
+    <div class="row">
 
         @foreach($pages as $page)
-            @include("partials/bloc-page", ["page"=>$page, "ouvert"=>$page->key==$bloc])
-        @endforeach
-
-        @foreach($projets as $projet)
-            @include("partials/bloc-projet", ["projet" => $projet, "ouvert"=>$projet->id==$bloc, "deplie"=>$deplie])
+            <div class="col-sm-6">
+                @include("partials/bloc-page")
+            </div>
         @endforeach
 
     </div>
+
 </div>
+
+<footer></footer>
 
 <div id="XS" class="visible-xs"></div>
 
@@ -63,7 +60,6 @@
     <script src="{{ url("/js/vendor.js") }}"></script>
     <script src="{{ elixir("js/idee.js") }}"></script>
 @show
-
 
 </body>
 </html>
