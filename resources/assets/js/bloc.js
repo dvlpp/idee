@@ -94,6 +94,8 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
 
 
 function scrollToBloc($bloc, animationLength, callback) {
+    if(!$bloc.length) return;
+
     $('body').animate(
         {'scrollTop': $bloc.offset().top},
         animationLength,

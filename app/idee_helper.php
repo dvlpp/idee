@@ -11,6 +11,7 @@ function vignette($upload, $largeur, $hauteur=null, $options=[])
 
 function vignetteNB($upload, $largeur, $hauteur=null, $options=[])
 {
+//    return vignette($upload, $largeur, $hauteur, $options);
     $vignette = vignette($upload, $largeur, $hauteur, $options);
 
     if($vignette)
