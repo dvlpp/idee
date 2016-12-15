@@ -33,10 +33,9 @@
             </a>
         </div>
     </div>
-
 </header>
 
-<div class="container">
+<div class="container body">
 
     @foreach($projets as $projet)
         @include("partials/bloc-projet", ["projet" => $projet, "ouvert"=>$projet->id==$bloc, "deplie"=>$deplie])

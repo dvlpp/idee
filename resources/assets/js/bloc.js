@@ -101,7 +101,7 @@ function scrollToBloc($bloc, animationLength, callback) {
     console.log("scroll", $bloc.offset().top);
 
     $('body').animate(
-        {'scrollTop': $bloc.offset().top},
+        {'scrollTop': $bloc.offset().top - 90},
         animationLength,
         callback
     );

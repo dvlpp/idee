@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="127b4c75-65e2-4b4d-a29d-869165faf58d" name="Default" comment="Config">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/build/css/app-2056170896.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/build/js/idee-321b249298.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/css/app-0920abe380.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/idee-8b9245016b.js" afterPath="" />
+    <list default="true" id="127b4c75-65e2-4b4d-a29d-869165faf58d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/build/css/app-f38a167724.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/build/js/idee-a8559db086.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/css/app-2056170896.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/idee-321b249298.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/css/app.css.map" afterPath="$PROJECT_DIR$/public/build/css/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/js/idee.js.map" afterPath="$PROJECT_DIR$/public/build/js/idee.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/rev-manifest.json" afterPath="$PROJECT_DIR$/public/build/rev-manifest.json" />
@@ -17,9 +15,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/idee.js" afterPath="$PROJECT_DIR$/public/js/idee.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/idee.js.map" afterPath="$PROJECT_DIR$/public/js/idee.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/bloc.js" afterPath="$PROJECT_DIR$/resources/assets/js/bloc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/blocs.less" afterPath="$PROJECT_DIR$/resources/assets/less/blocs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php" />
     </list>
     <ignored path="idee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,23 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bloc-projet.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blocs.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blocs.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/less/blocs.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="194" column="27" lean-forward="false" selection-start-line="194" selection-start-column="26" selection-end-line="194" selection-end-column="27" />
+            <state relative-caret-position="504">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="e#521#636#0" expanded="false" />
               </folding>
@@ -65,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc-page.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php">
+      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+            <state relative-caret-position="168">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -78,8 +63,8 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+            <state relative-caret-position="882">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -95,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bloc.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/bloc.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1238">
-              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="860">
+              <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -171,15 +156,15 @@
         <option value="$PROJECT_DIR$/public/sitemap.xml" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/less/app.less" />
         <option value="$PROJECT_DIR$/app/idee_helper.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/partials/bloc-projet.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/resources/assets/js/bloc.js" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/less/blocs.less" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/less/app.less" />
+        <option value="$PROJECT_DIR$/resources/assets/js/bloc.js" />
       </list>
     </option>
   </component>
@@ -588,7 +573,7 @@
       <workItem from="1471534438765" duration="2404000" />
       <workItem from="1479975661543" duration="9477000" />
       <workItem from="1480927561704" duration="2052000" />
-      <workItem from="1481795299631" duration="4225000" />
+      <workItem from="1481795299631" duration="5270000" />
     </task>
     <task id="LOCAL-00001" summary="Update README">
       <created>1426777440809</created>
@@ -898,18 +883,25 @@
       <option name="project" value="LOCAL" />
       <updated>1480928897772</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Erwan touch">
+      <created>1481799712983</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1481799712983</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18158000" />
+    <option name="totallyTimeSpent" value="19203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1258" height="1417" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860096" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860096" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -949,7 +941,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fix JS" />
     <MESSAGE value="..." />
     <MESSAGE value="tentative swipe smartphone" />
     <MESSAGE value="Fix animation" />
@@ -974,7 +965,8 @@
     <MESSAGE value="Ajout légendes thumb" />
     <MESSAGE value="Ajout légendes" />
     <MESSAGE value="Config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config" />
+    <MESSAGE value="Erwan touch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erwan touch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1193,14 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5670">
-          <caret line="135" column="18" lean-forward="false" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/sharp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -1297,29 +1281,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/bloc.js">
+    <entry file="file://$PROJECT_DIR$/resources/assets/less/blocs.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1238">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#521#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        <state relative-caret-position="882">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/less/blocs.less">
+    <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="194" column="27" lean-forward="false" selection-start-line="194" selection-start-column="26" selection-end-line="194" selection-end-column="27" />
-          <folding>
-            <element signature="e#521#636#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/bloc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

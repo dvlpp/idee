@@ -14,21 +14,12 @@ html, body {
   font-size: 13px;
 }
 
-h1, .lead, strong {
-  font-weight: 600;
+.body {
+  padding-top: 90px;
 }
 
-.icon-circle {
-  font-size: 50px;
-  padding:10px;
-  border:2px solid #000;
-  border-radius: 50px;
-  color:#000;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
+h1, .lead, strong {
+  font-weight: 600;
 }
 
 header {
@@ -38,6 +29,7 @@ header {
   text-align: center;
   width: 100%;
   padding:15px 0;
+  position: fixed;
 }
 
 footer {
@@ -56,28 +48,6 @@ footer {
   margin:auto;
   background: url('/css/img/logo-e.png') no-repeat center top;
   background-size: 100%;
-}
-
-
-header .left,
-header .right {
-  position: absolute;
-  top:7px;
-  color: darken(@body-bg, 10%);
-  border-color: darken(@body-bg, 10%);
-  cursor: pointer;
-
-  &:hover {
-    color: #000;
-    border-color: #000;
-  }
-
-}
-header .left {
-  left:50px;
-}
-header .right {
-  right:50px;
 }
 
 a:hover, a:active, a:focus {
