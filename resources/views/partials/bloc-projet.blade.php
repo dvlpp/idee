@@ -12,79 +12,86 @@
         <h1 class="hint">{{ $projet->numero }}</h1>
     @endif
 
-    <div class="cartel">
-        <h1>{{ $projet->contenu->titre }}</h1>
-        {!! markdown($projet->contenu->chapo, $projet->couleur) !!}
-
-        <a class="action-pli icon-circle" href="{{ url("projet/".$projet->id."/".str_slug($projet->contenu->titre)) }}" data-titre="{{ $projet->contenu->titre }}">
-            <span class="ouvrir icon-keyboard-arrow-down"></span>
-            <span class="fermer icon-close"></span>
-        </a>
-    </div>
-
     <div class="fiche">
 
-        <div class="row">
-            <div class="col-sm-8">
-                {!! markdown($projet->contenu->texte, $projet->couleur) !!}
-            </div>
-            <div class="col-sm-4">
-                @if(sizeof($projet->partenaires))
-                    <div class="liste">
-                        <p class="titre">Partenaires</p>
-                        <ul class="list-unstyled">
-                            @foreach($projet->partenaires as $partenaire)
-                                <li>
-                                    {!! $partenaire->url ? link_to($partenaire->url, $partenaire->nom, ["style"=>"color:#".$projet->couleur]) : $partenaire->nom !!}
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+        <div class="cartel">
+            <h1>{{ $projet->contenu->titre }}</h1>
 
-                @if(sizeof($projet->fichiers))
-                    <div class="liste fichiers">
-                        <p class="titre">Documents<br/>à télécharger</p>
-                        <ul class="list-unstyled">
-                            @foreach($projet->fichiers as $fichier)
-                                @if($fichier->fichier)
-                                    <li>
-                                        <a class="pdf" href="{{ route('dl', [$fichier->id, str_slug($fichier->titre, '_'), $fichier->fichier->fichier]) }}" style="color:#{{ $projet->couleur }}">
-                                            {{ $fichier->titre }} ({{ $fichier->extension }})
-                                        </a>
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-            </div>
+            <a class="action-pli" href="{{ url("projet/".$projet->id."/".str_slug($projet->contenu->titre)) }}" data-titre="{{ $projet->contenu->titre }}">
+                <span class="ouvrir icon-keyboard-arrow-down"></span>
+                <span class="fermer icon-close"></span>
+            </a>
         </div>
 
-        @if(sizeof($projet->visuels))
-            <div class="row half-half-gutter photos">
-                @foreach($projet->visuels as $k => $visuel)
-                    @if($visuel->photo)
-                        <div class="col-lg-4 col-xs-6">
-                            <a href="{{ vignette($visuel->photo, 800, 800) }}"
-                               class="imagelightbox"
-                               style="background-image:url({{ vignette($visuel->photo, 400, 300) }})"
-                               title="{{ $visuel->legende }}">
-                                @if($visuel->legende)
-                                    <span class="legende">
-                                        {{ $visuel->legende }}
-                                    </span>
-                                @endif
-                            </a>
-                        </div>
+        <div class="content">
 
-                        @if($k+1%2==0)
-                            <div class="clearfix"></div>
-                        @endif
+            <div class="row">
+                <div class="col-sm-8">
+                    @if($projet->contenu->chapo)
+                        <div class="lead">
+                            {!! markdown($projet->contenu->chapo, $projet->couleur) !!}
+                        </div>
                     @endif
-                @endforeach
+                    {!! markdown($projet->contenu->texte, $projet->couleur) !!}
+                </div>
+                <div class="col-sm-4">
+                    @if(sizeof($projet->partenaires))
+                        <div class="liste">
+                            <p class="titre">Partenaires</p>
+                            <ul class="list-unstyled">
+                                @foreach($projet->partenaires as $partenaire)
+                                    <li>
+                                        {!! $partenaire->url ? link_to($partenaire->url, $partenaire->nom, ["style"=>"color:#".$projet->couleur]) : $partenaire->nom !!}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if(sizeof($projet->fichiers))
+                        <div class="liste fichiers">
+                            <p class="titre">Documents<br/>à télécharger</p>
+                            <ul class="list-unstyled">
+                                @foreach($projet->fichiers as $fichier)
+                                    @if($fichier->fichier)
+                                        <li>
+                                            <a class="pdf" href="{{ route('dl', [$fichier->id, str_slug($fichier->titre, '_'), $fichier->fichier->fichier]) }}" style="color:#{{ $projet->couleur }}">
+                                                {{ $fichier->titre }} ({{ $fichier->extension }})
+                                            </a>
+                                        </li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
             </div>
-        @endif
+
+            @if(sizeof($projet->visuels))
+                <div class="row half-half-gutter photos">
+                    @foreach($projet->visuels as $k => $visuel)
+                        @if($visuel->photo)
+                            <div class="col-lg-4 col-xs-6">
+                                <a href="{{ vignette($visuel->photo, 800, 800) }}"
+                                   class="imagelightbox"
+                                   style="background-image:url({{ vignette($visuel->photo, 400, 300) }})"
+                                   title="{{ $visuel->legende }}">
+                                    @if($visuel->legende)
+                                        <span class="legende">
+                                            {{ $visuel->legende }}
+                                        </span>
+                                    @endif
+                                </a>
+                            </div>
+
+                            @if($k+1%2==0)
+                                <div class="clearfix"></div>
+                            @endif
+                        @endif
+                    @endforeach
+                </div>
+            @endif
+        </div>
     </div>
 
 </article>

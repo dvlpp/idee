@@ -6675,7 +6675,7 @@ button.close {
   text-align: center;
   position: relative;
   cursor: pointer;
-  padding: 4em 0;
+  padding: 4em 0 0 0;
   background-color: #e1e0de;
   background-position: center top;
   background-repeat: no-repeat;
@@ -6684,7 +6684,7 @@ button.close {
 }
 .bloc .hint {
   margin: 0;
-  position: absolute;
+  padding-bottom: .5em;
   width: 100%;
   text-align: center;
   font-size: 28px;
@@ -6702,30 +6702,28 @@ button.close {
   font-size: 130px;
   font-weight: 100;
 }
-.bloc .cartel {
+.bloc .fiche .cartel {
   opacity: 0;
-  position: relative;
-  text-align: center;
-  padding: 1em 1em 5em 1em;
+  background: #FFF;
+  text-align: left;
   transition: opacity 0.5s ease;
 }
-.bloc .cartel h1 {
+.bloc .fiche .cartel h1 {
   font-size: 28px;
   margin: 0 0 7.5px 0;
   letter-spacing: 1px;
 }
-.bloc .cartel p {
-  line-height: 1.2;
-}
 .bloc .action-pli {
-  opacity: 0;
   position: absolute;
-  bottom: -20px;
-  left: 50%;
-  margin-left: -31px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
   cursor: pointer;
   text-decoration: none;
   color: #000;
+  font-size: 5em;
 }
 .bloc .action-pli .ouvrir {
   display: block;
@@ -6734,9 +6732,6 @@ button.close {
   display: none;
 }
 .bloc .action-pli:hover {
-  padding: 15px;
-  margin-left: -36px;
-  bottom: -25px;
   transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
 }
 .bloc.ouvert,
@@ -6744,22 +6739,22 @@ button.close {
   cursor: default;
   background-size: 108%;
 }
-.bloc.ouvert .hint,
-.bloc.ouverture .hint {
-  display: none;
+.bloc.ouvert .fiche,
+.bloc.ouverture .fiche {
+  display: block;
 }
-.bloc.ouvert .cartel,
-.bloc.ouverture .cartel,
-.bloc.ouvert .action-pli,
-.bloc.ouverture .action-pli {
+.bloc.ouvert .fiche .cartel,
+.bloc.ouverture .fiche .cartel {
   opacity: 1;
 }
-.bloc .fiche {
+.bloc .fiche,
+.bloc .fiche .content {
   display: none;
 }
 .bloc .fiche,
 .page .fiche {
   width: 100%;
+  position: relative;
   background: #fff;
   text-align: left;
   line-height: 1.3;
@@ -6794,10 +6789,13 @@ button.close {
   margin-bottom: 10px;
   border-bottom: 2px solid #000;
 }
+.bloc .fiche {
+  margin-top: -95px;
+}
 .page {
   margin-top: 30px;
 }
-.bloc.deplie .fiche {
+.bloc.deplie .fiche .content {
   display: block;
 }
 .bloc.deplie .action-pli .ouvrir {
@@ -6829,25 +6827,30 @@ button.close {
 }
 @media (max-width: 767px) {
   .bloc {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
+    background-size: 115%;
   }
-  .bloc .fiche {
-    padding: 30px 15px;
+  .bloc .fiche .cartel {
+    text-align: center;
+    height: 65px;
+    position: relative;
   }
-  .bloc .cartel {
-    padding: 0 .5em 4em .5em;
+  .bloc .fiche .cartel h1 {
+    font-size: 20px;
   }
-  .bloc .cartel h1 {
-    font-size: 24px;
+  .bloc .fiche .cartel .action-pli {
+    top: auto;
+    bottom: -60px;
+    text-align: center;
+  }
+  .bloc.deplie .fiche .cartel .action-pli {
+    display: none;
   }
   .bloc .fiche .liste {
     padding: 0;
   }
   .bloc .fiche .pdf {
     margin-left: 0;
-  }
-  .bloc .action-pli {
-    padding: 6px !important;
   }
   .bloc .actu {
     width: auto;

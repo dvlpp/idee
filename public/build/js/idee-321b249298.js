@@ -45,6 +45,8 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
              */
             $(this).find(".action-pli").click(function(event) {
 
+                event.preventDefault();
+
                 // if(isSmartphone()) return false;
 
                 var $bloc = $(this).parents(".bloc");
@@ -58,9 +60,9 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
 
                 } else {
                     // On déplie
-                    $bloc.find(".fiche").hide();
+                    $bloc.find(".fiche .content").hide();
                     $bloc.addClass("deplie");
-                    $bloc.find(".fiche").fadeIn();
+                    $bloc.find(".fiche .content").fadeIn();
                     scrollToBloc($bloc, 0);
 
                     // Gestion history
@@ -95,6 +97,8 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
 
 function scrollToBloc($bloc, animationLength, callback) {
     if(!$bloc.length) return;
+
+    console.log("scroll", $bloc.offset().top);
 
     $('body').animate(
         {'scrollTop': $bloc.offset().top},

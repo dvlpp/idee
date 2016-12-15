@@ -28,7 +28,9 @@
     <div class="logo">
         <span class="baseline">Innovation Design et Expériences</span>
         <div class="marque">
-            <img src="/css/img/logo.png" class="img-responsive" />
+            <a href="{{ url() }}">
+                <img src="/css/img/logo.png" class="img-responsive" />
+            </a>
         </div>
     </div>
 

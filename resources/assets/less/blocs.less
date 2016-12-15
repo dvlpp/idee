@@ -3,7 +3,7 @@
   text-align: center;
   position: relative;
   cursor: pointer;
-  padding: 4em 0;
+  padding: 4em 0 0 0;
   background-color: #e1e0de;
   background-position: center top;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 .bloc .hint {
   margin: 0;
-  position: absolute;
+  padding-bottom: .5em;
   width: 100%;
   text-align: center;
   font-size: 28px;
@@ -38,11 +38,10 @@
   font-weight: 100;
 }
 
-.bloc .cartel {
+.bloc .fiche .cartel {
   opacity: 0;
-  position: relative;
-  text-align: center;
-  padding:1em 1em 5em 1em;
+  background: #FFF;
+  text-align: left;
 
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
@@ -54,21 +53,19 @@
     margin:0 0 @grid-gutter-width/4 0;
     letter-spacing: 1px;
   }
-
-  p {
-    line-height: 1.2;
-  }
 }
 
 .bloc .action-pli {
-  opacity: 0;
   position: absolute;
-  bottom:-20px;
-  left:50%;
-  margin-left:-31px;
+  top:0;
+  left:0;
+  right:0;
+  padding: 15px;
+  text-align: right;
   cursor: pointer;
   text-decoration: none;
   color:#000;
+  font-size: 5em;
 
   .ouvrir {
     display:block;
@@ -78,10 +75,6 @@
   }
 
   &:hover {
-    padding:15px;
-    margin-left:-36px;
-    bottom: -25px;
-
     -webkit-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
     -moz-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
     -o-transition: padding 0.2s ease-out, margin 0.2s ease-out, bottom 0.2s ease-out;
@@ -95,23 +88,28 @@
   background-size: 108%;
 
   .hint {
-    display:none;
   }
 }
 
-.bloc.ouvert .cartel,
-.bloc.ouverture .cartel,
-.bloc.ouvert .action-pli,
-.bloc.ouverture .action-pli {
+.bloc.ouvert .fiche,
+.bloc.ouverture .fiche {
+  display: block;
+}
+
+.bloc.ouvert .fiche .cartel,
+.bloc.ouverture .fiche .cartel {
   opacity: 1;
 }
 
-.bloc .fiche {
+.bloc .fiche,
+.bloc .fiche .content {
   display: none;
 }
 
-.bloc .fiche, .page .fiche {
+.bloc .fiche,
+.page .fiche {
   width:100%;
+  position: relative;
   background: #fff;
   text-align:left;
   line-height: 1.3;
@@ -147,40 +145,25 @@
   }
 }
 
+.bloc .fiche {
+  margin-top: -95px;
+}
+
 .page {
   margin-top: @grid-gutter-width;
 }
 
 .bloc.deplie {
-  .fiche {
+  .fiche .content {
     display: block;
   }
-  //.cartel {
-  //  display: none;
-  //}
   .action-pli {
-    //bottom:auto;
-    //top:110px;
-    //right:20px;
-    //left:auto;
-    //z-index: 100;
-
     .ouvrir {
       display:none;
     }
     .fermer {
       display:block;
     }
-
-    //&:hover {
-    //  top:105px;
-    //  right:15px;
-    //  -webkit-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
-    //  -moz-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
-    //  -o-transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
-    //  transition: padding 0.2s ease-out, margin 0.2s ease-out, top 0.2s ease-out, right 0.2s ease-out;
-    //}
-
   }
 }
 
@@ -212,19 +195,28 @@
 @media (max-width:@screen-xs-max) {
 
   .bloc {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
+    background-size: 115%;
   }
 
-  .bloc .fiche {
-    padding:@grid-gutter-width @grid-gutter-width/2;
-  }
-
-  .bloc .cartel {
-    padding: 0 .5em 4em .5em;
+  .bloc .fiche .cartel {
+    text-align: center;
+    height: 65px;
+    position: relative;
 
     h1 {
-      font-size: 24px;
+      font-size: 20px;
     }
+
+    .action-pli {
+      top: auto;
+      bottom: -60px;
+      text-align: center;
+    }
+  }
+
+  .bloc.deplie .fiche .cartel .action-pli {
+    display: none;
   }
 
   .bloc .fiche .liste {
@@ -233,10 +225,6 @@
 
   .bloc .fiche .pdf {
     margin-left:0;
-  }
-
-  .bloc .action-pli {
-    padding: 6px !important;
   }
 
   .bloc .actu {
