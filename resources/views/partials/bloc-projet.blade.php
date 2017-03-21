@@ -75,10 +75,13 @@
                                 <a href="{{ vignette($visuel->photo, 800, 800) }}"
                                    class="imagelightbox"
                                    style="background-image:url({{ vignette($visuel->photo, 400, 300) }})"
-                                   title="{{ $visuel->legende }}">
-                                    @if($visuel->legende)
+                                   title="{{ $visuel->objet . ($visuel->designer ? ' ©'.$visuel->designer : '') }} <br> {{ $visuel->legende }}">
+                                    @if($visuel->objet || $visuel->designer)
                                         <span class="legende">
-                                            {{ $visuel->legende }}
+                                            {{ $visuel->objet }}
+                                            @if($visuel->designer)
+                                                ©{{ $visuel->designer }}
+                                            @endif
                                         </span>
                                     @endif
                                 </a>
