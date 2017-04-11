@@ -6,6 +6,7 @@ use Illuminate\Contracts\Filesystem\Filesystem;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class HomeController extends Controller {
+
     /**
      * @var ProjetRepo
      */
@@ -36,9 +37,13 @@ class HomeController extends Controller {
         $pages = $this->pageRepo->all();
 
         $projet = $id ? $projets->find($id) : null;
-        if( ! $projet) $projet = $projets[0];
 
-        return view('home', ["bloc"=>$projet->id, "deplie"=>$id, "projets" => $projets, "pages"=>$pages]);
+        return view('home', [
+            "bloc" => $projet ? $projet->id : null,
+            "deplie" => $id,
+            "projets" => $projets,
+            "pages" => $pages
+        ]);
     }
 
     public function page($key)

@@ -2,15 +2,16 @@
 
 use Intervention\Image\Facades\Image;
 
-function vignette($upload, $largeur, $hauteur, $options=[])
+function vignette($upload, $largeur, $hauteur=null, $options=[])
 {
     if($upload) return sharp_thumbnail($upload->getSharpFilePath(), $largeur, $hauteur, $options);
 
     return "";
 }
 
-function vignetteNB($upload, $largeur, $hauteur, $options=[])
+function vignetteNB($upload, $largeur, $hauteur=null, $options=[])
 {
+//    return vignette($upload, $largeur, $hauteur, $options);
     $vignette = vignette($upload, $largeur, $hauteur, $options);
 
     if($vignette)

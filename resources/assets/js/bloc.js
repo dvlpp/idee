@@ -1,5 +1,3 @@
-var largeurBlocFerme = parseInt($('.bloc:not(.ouvert):not(.ouverture)').css("width"));
-var largeurBlocOuvert = parseInt($('.bloc.ouvert').css("width"));
 var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-color");
 
 (function ( $ ) {
@@ -13,41 +11,33 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
              */
             $(this).click(function(event) {
 
-                if(isSmartphone()) return true;
-
                 if($(event.target).parents(".fiche").length) return true;
+
+                event.preventDefault();
 
                 if($(this).hasClass("ouvert") || $(this).hasClass("ouverture")) return false;
 
                 $(".projet.ouvert").each(function() {
-                    if($(this).data("visuelferme"))
-                    {
+                    if($(this).data("visuelferme")) {
                         $(this).css("background-image", "url(" + $(this).data("visuelferme") + ")");
                     }
                     $(this).css("background-color", couleurBlocFerme);
                 });
 
-                if($(this).hasClass("projet"))
-                {
-                    // Cas projet : passage visuel ouverture en couleur
-                    if($(this).data("visuelouvert"))
-                    {
-                        $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
-                    }
-                    $(this).css("background-color", $(this).data("couleur"));
+                // Passage visuel ouverture en couleur
+                if($(this).data("visuelouvert")) {
+                    $(this).css("background-image", "url(" + $(this).data("visuelouvert") + ")");
                 }
+                $(this).css("background-color", $(this).data("couleur"));
 
                 // Fermeture du bloc ouvert
-                $('.bloc.ouvert').each(function() {
-                    $(this).addClass("fermeture");
-                });
+                $('.bloc.ouvert').removeClass("deplie").addClass("fermeture");
 
                 // Ouverture...
-                $(this).addClass("ouverture");
+                $(this).removeClass("deplie").addClass("ouverture");
 
                 // Et scroll pendant l'ouverture
-                scrollToBloc($(this), 800);
-
+                scrollToBloc($(this), 400);
             });
 
             /**
@@ -55,33 +45,25 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
              */
             $(this).find(".action-pli").click(function(event) {
 
-                if(isSmartphone()) return false;
+                event.preventDefault();
 
-                var $bloc = $(this).parent(".bloc");
-                var $horizontal = $bloc.parents(".horizontal");
+                // if(isSmartphone()) return false;
+
+                var $bloc = $(this).parents(".bloc");
+                // var $horizontal = $bloc.parents(".horizontal");
 
                 $(this).addClass("hidden");
 
-                if($bloc.hasClass("deplie"))
-                {
+                if($bloc.hasClass("deplie")) {
                     // On replie
                     $bloc.removeClass("deplie");
-                    $horizontal.removeClass("verouille");
 
-                    if($bloc.hasClass("page"))
-                    {
-                        // Page : pas d'état "ouvert"
-                        $bloc.addClass("fermeture");
-                    }
-                }
-                else
-                {
+                } else {
                     // On déplie
-                    $bloc.find(".fiche").hide();
+                    $bloc.find(".fiche .content").hide();
                     $bloc.addClass("deplie");
-                    $bloc.find(".fiche").fadeIn();
+                    $bloc.find(".fiche .content").fadeIn();
                     scrollToBloc($bloc, 0);
-                    $horizontal.addClass("verouille");
 
                     // Gestion history
                     window.history.pushState({foo:"bar"}, $(event.currentTarget).data("titre"), $(event.currentTarget).prop("href"));
@@ -93,27 +75,15 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
             /**
              * Une fois ouvert ou fermé (animation terminée) :
              */
-            $(this).on("transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd", function() {
+            $(this).on("transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd", function(e) {
 
-                if(isSmartphone()) return false;
+                // if(isSmartphone()) return false;
 
-                if($(this).hasClass("ouverture"))
-                {
+                if($(this).hasClass("ouverture")) {
                     $(this).removeClass("ouverture");
                     $(this).addClass("ouvert");
 
-                    if($(this).hasClass("page"))
-                    {
-                        // Page : pas d'état "ouvert"
-                        $(this).find(".action-pli").click();
-                    }
-                }
-
-                else if($(this).hasClass("fermeture"))
-                {
-                    var $horizontal = $(this).parents(".horizontal");
-                    $horizontal.removeClass("verouille");
-
+                }  else if($(this).hasClass("fermeture")) {
                     $(this).removeClass("fermeture ouvert ouverture deplie");
                 }
             });
@@ -125,19 +95,13 @@ var couleurBlocFerme = $('.bloc:not(.ouvert):not(.ouverture)').css("background-c
 
 
 
-function scrollToBloc($bloc, animationLength, callback)
-{
-    var $horizontal = $(".horizontal");
-    var bordBloc = parseInt($horizontal.find(".mur").css("border-left-width"));
+function scrollToBloc($bloc, animationLength, callback) {
+    if(!$bloc.length) return;
 
-    $bloc.prevAll(".bloc").each(function() {
-        bordBloc += largeurBlocFerme;
-    });
+    console.log("scroll", $bloc.offset().top);
 
-    var largeurFenetre = $(window).width();
-
-    $horizontal.animate(
-        {'scrollLeft': bordBloc - ((largeurFenetre-largeurBlocOuvert)/2)},
+    $('body').animate(
+        {'scrollTop': $bloc.offset().top - 90},
         animationLength,
         callback
     );

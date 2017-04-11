@@ -116,10 +116,22 @@ return [
                                     "file_filter_alert" => "Image au format JPG seulement",
                                     "thumbnail" => "0x100",
                                 ],
+                                "objet" => [
+                                    "type" => "text",
+                                    "attributes" => [
+                                        "placeholder" => "Nom de l'objet"
+                                    ]
+                                ],
+                                "designer" => [
+                                    "type" => "text",
+                                    "attributes" => [
+                                        "placeholder" => "Auteur"
+                                    ]
+                                ],
                                 "legende" => [
                                     "type" => "text",
                                     "attributes" => [
-                                        "placeholder" => "Légende"
+                                        "placeholder" => "Légende complémentaire"
                                     ]
                                 ],
                             ]
