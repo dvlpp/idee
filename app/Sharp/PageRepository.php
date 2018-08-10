@@ -3,14 +3,21 @@
 use Dvlpp\Sharp\ListView\SharpEntitiesListParams;
 use Dvlpp\Sharp\Repositories\SharpCmsRepository;
 use Dvlpp\Sharp\Repositories\SharpEloquentRepositoryUpdaterTrait;
+use Dvlpp\Sharp\Repositories\SharpEloquentRepositoryUpdaterWithUploads;
 use Dvlpp\Sharp\Repositories\SharpHasActivateState;
 use Dvlpp\Sharp\Repositories\SharpIsReorderable;
 use Idee\Core\Contenu;
 use Idee\Core\Page;
+use Idee\Sharp\Utils\IllustrableUpdaterTrait;
+use Idee\Sharp\Utils\UploadsUpdaterTrait;
 
-class PageRepository implements SharpCmsRepository, SharpIsReorderable, SharpHasActivateState {
+class PageRepository implements SharpCmsRepository, SharpIsReorderable, SharpHasActivateState, SharpEloquentRepositoryUpdaterWithUploads {
 
     use SharpEloquentRepositoryUpdaterTrait;
+
+    use UploadsUpdaterTrait;
+
+    use IllustrableUpdaterTrait;
 
     /**
      * Find an instance with the given id.
