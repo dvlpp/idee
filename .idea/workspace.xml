@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127b4c75-65e2-4b4d-a29d-869165faf58d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/idee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/idee.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Sharp/PageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Sharp/PageRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sharp.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sharp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="idee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,15 +29,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
               <caret line="13" column="95" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadsUpdaterTrait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Sharp/Utils/UploadsUpdaterTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -95,14 +81,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc-page.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bloc-page.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="10" column="147" lean-forward="true" selection-start-line="10" selection-start-column="147" selection-end-line="10" selection-end-column="147" />
+            <state relative-caret-position="484">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#article#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -185,7 +180,6 @@
         <option value="$PROJECT_DIR$/config/idee.php" />
         <option value="$PROJECT_DIR$/app/Core/Repositories/ProjetRepo.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Sharp/Utils/UploadsUpdaterTrait.php" />
         <option value="$PROJECT_DIR$/public/sitemap.xml" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
@@ -203,6 +197,7 @@
         <option value="$PROJECT_DIR$/app/Sharp/PageRepository.php" />
         <option value="$PROJECT_DIR$/config/sharp.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -280,15 +275,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="bloc-projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;bloc-page&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;Upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;app.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;idee.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/idee.php&#10;Auth&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/Auth.php&#10;sharp.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;routes&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/routes.php&#10;projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;compos&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;projet&#9;null&#9;null&#10;composer.json&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Session&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php&#10;less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;bloc&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;projetfich&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/ProjetFichier.php&#10;Projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;homecon&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;home&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;app.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;bloc.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/bloc.js&#10;main.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;filesyst&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/filesystems.php&#10;File&#9;null&#9;null&#10;homecontroller&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;link_to&#9;null&#9;null&#10;PRojetvisuel&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/ColumnsRenderers/ProjetVisuel.php&#10;bloc-pro&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;swiper.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/swiper/dist/js/swiper.js&#10;bloc-pa&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;gulp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/gulpfile.js&#10;list&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;internal&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;bloc-&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;main&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;app&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;vignette&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;helper&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/idee_helper.php&#10;home.blade&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;Projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sharpinter&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;entityli&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;compo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Uplo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;Projet.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sha&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;sharp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php" />
     <property name="FullScreen" value="false" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file:///Users/philippe/code/friends/idee/.gitignore&#10;bloc-projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;bloc-page&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;Upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;app.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;idee.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/idee.php&#10;Auth&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/Auth.php&#10;sharp.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php&#10;routes&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/routes.php&#10;projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;compos&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;projet&#9;null&#9;null&#10;composer.json&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Session&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php&#10;less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;bloc&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;projetfich&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/ProjetFichier.php&#10;Projet.php&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;homecon&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;home&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;app.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;bloc.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/bloc.js&#10;main.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;filesyst&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/filesystems.php&#10;File&#9;null&#9;null&#10;homecontroller&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Http/Controllers/HomeController.php&#10;link_to&#9;null&#9;null&#10;PRojetvisuel&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Sharp/ColumnsRenderers/ProjetVisuel.php&#10;bloc-pro&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;swiper.js&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/bower/swiper/dist/js/swiper.js&#10;bloc-pa&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-page.blade.php&#10;bloc.less&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/blocs.less&#10;gulp&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/gulpfile.js&#10;list&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;internal&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;bloc-&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/partials/bloc-projet.blade.php&#10;main&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/js/main.js&#10;app&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/assets/less/app.less&#10;vignette&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/app.php&#10;upload&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;helper&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/idee_helper.php&#10;home.blade&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/resources/views/home.blade.php&#10;Projet&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sharpinter&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/helpers/sharp_internal.php&#10;entityli&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/vendor/dvlpp/sharp/src/views/cms/entityList.blade.php&#10;compo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/composer.json&#10;Uplo&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Upload.php&#10;Projet.&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/app/Core/Projet.php&#10;sha&#9;FILE&#9;file:///Users/philippe/Documents/DEVELOPPLAN/projets/phpstorm/idee/config/sharp.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -391,7 +386,7 @@
       <workItem from="1481795299631" duration="5939000" />
       <workItem from="1482332524867" duration="19000" />
       <workItem from="1490094705982" duration="1717000" />
-      <workItem from="1533885329446" duration="583000" />
+      <workItem from="1533885329446" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="Update README">
       <created>1426777440809</created>
@@ -722,11 +717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490095248848</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add visual to page">
+      <created>1533885936107</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1533885936107</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22191000" />
+    <option name="totallyTimeSpent" value="22228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1676" height="1417" extended-state="0" />
@@ -775,7 +777,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fix animation" />
     <MESSAGE value="Code format / commentaires" />
     <MESSAGE value="Tweak CSS" />
     <MESSAGE value="CSS Sharp" />
@@ -800,7 +801,8 @@
     <MESSAGE value="Erwan touch" />
     <MESSAGE value="Erwan touch retours" />
     <MESSAGE value="Legends" />
-    <option name="LAST_COMMIT_MESSAGE" value="Legends" />
+    <MESSAGE value="Add visual to page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add visual to page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Sharp/ColumnsRenderers/ProjetVisuel.php">
@@ -1076,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/sharp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
@@ -1126,11 +1121,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/bloc-page.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="10" column="147" lean-forward="true" selection-start-line="10" selection-start-column="147" selection-end-line="10" selection-end-column="147" />
+        <state relative-caret-position="484">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#article#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
