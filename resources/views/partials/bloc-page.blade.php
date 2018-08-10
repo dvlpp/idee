@@ -6,6 +6,10 @@
         <div class="lead">
             {!! markdown($page->contenu->chapo) !!}
         </div>
+        
+        @if($page->visuel)
+            <img src="{{ vignette($page->visuel, 655) }}" alt="{{ e($page->contenu->titre) }}" style="margin-bottom: 20px;" class="img-responsive">
+        @endif
 
         {!! markdown($page->contenu->texte) !!}
 

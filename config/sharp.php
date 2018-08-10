@@ -282,6 +282,14 @@ return [
                             "toolbar" => true,
                             "height" => 200
                         ],
+
+                        "visuel" => [
+                            "label" => "Photo (facultatif)",
+                            "type" => "file",
+                            "file_filter" => "jpg,jpeg",
+                            "file_filter_alert" => "Image au format JPG seulement",
+                            "thumbnail" => "0x100"
+                        ],
                     ],
 
                     "form_layout" => [
@@ -291,6 +299,7 @@ return [
                                 "key",
                                 "contenu~titre",
                                 "contenu~chapo",
+                                "visuel",
                             ],
                             "col2" => [
                                 "contenu~texte",
