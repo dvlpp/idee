@@ -35,14 +35,15 @@ class HomeController extends Controller {
     {
         $projets = $this->projetRepo->all();
         $pages = $this->pageRepo->all();
-
+        
         $projet = $id ? $projets->find($id) : null;
 
         return view('home', [
             "bloc" => $projet ? $projet->id : null,
             "deplie" => $id,
             "projets" => $projets,
-            "pages" => $pages
+            "mainPages" => $pages->take(2),
+            "pages" => $pages->slice(2)
         ]);
     }
 
