@@ -90,14 +90,20 @@ a:hover, a:active, a:focus {
 }
 
 .ecwid {
-  //&, a {
-  //  font-weight: 600!important;
-  //}
+  .form-control__button {
+    text-transform: uppercase!important;
+  }
+  .ec-related-products {
+    .form-control--small .form-control__button {
+      font-size: 12px!important;
+    }
+  }
   .ec-footer {
     padding-bottom: 0!important;
   }
-  .form-control__button {
-    text-transform: uppercase!important;
+  .ecwid-productBrowser {
+    padding-left: 0!important;
+    padding-right: 0!important;
   }
 }
 
