@@ -16,7 +16,7 @@
     "sass-loader": "^8.0.2"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "bootstrap-sass": "^3.4.1"
   }
 }
